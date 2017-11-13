@@ -4,13 +4,6 @@ using System.Text;
 
 namespace KoffieMachine
 {
-    enum KoffieSoort
-    {
-        koffiezwart = 0,
-        cappuccino = 1,
-        lattemacchiato = 2
-    }
-
     class Bekertje
     {
         private KoffieSoort SoortKoffie;
