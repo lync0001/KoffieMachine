@@ -15,7 +15,7 @@ namespace KoffieMachine
 
         private void PrintKoffieZwart()
         {
-            Console.WriteLine("Koffie zwart");
+            Console.WriteLine("Koffie");
         }
 
         private void PrintLatteMacchiato()
@@ -23,7 +23,16 @@ namespace KoffieMachine
             Console.WriteLine("Gewoon een bak melk");
         }
 
+        private void PrintAmericano()
+        {
+            Console.WriteLine("Water met koffie");
+        }
        
+        private void PrintEspresso()
+        {
+            Console.WriteLine("Pittig bakkie");
+        }
+
         private void PrintCappuccino()
         {
             Console.WriteLine("          {");
@@ -53,7 +62,7 @@ namespace KoffieMachine
                 PrintCappuccino();
             }
 
-            else if (this.SoortKoffie == KoffieSoort.koffiezwart)
+            else if (this.SoortKoffie == KoffieSoort.koffie)
             {
                 PrintKoffieZwart();
             }
@@ -61,6 +70,16 @@ namespace KoffieMachine
             else if (this.SoortKoffie == KoffieSoort.lattemacchiato)
             {
                 PrintLatteMacchiato();
+            }
+
+            else if (this.SoortKoffie == KoffieSoort.americano)
+            {
+                PrintAmericano();
+            }
+
+            else if (this.SoortKoffie == KoffieSoort.espresso)
+            {
+                PrintEspresso();
             }
         }
 

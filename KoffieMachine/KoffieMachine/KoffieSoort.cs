@@ -6,8 +6,10 @@ namespace KoffieMachine
 {
     enum KoffieSoort
     {
-        koffiezwart = 0,
+        koffie = 0,
         cappuccino = 1,
-        lattemacchiato = 2
+        lattemacchiato = 2,
+        americano = 3,
+        espresso = 4,
     }
 }
